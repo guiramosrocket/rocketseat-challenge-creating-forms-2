@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Guilherme Ramos" />
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="top">
+        <header>
+          <h1 class="header-title">Avalie a sua mentoria</h1>
+          <p class="header-paragraph">
+            Chegou a hora de avaliar o seu mentor. Bora lá?
+          </p>
+          <img
+            src="assets/img/balao.svg"
+            alt="Balão de pensamento vermelho com 5 estrelas brancas dentro"
+          />
+        </header>
+      </div>
+      <div class="title-box">Informações Pessoais</div>
+
+      <main>
+        <form>
+          <fieldset id="form-personal-info">
+            <div class="fieldset-wrapper">
+              <div class="col-2">
+                <div class="input-wrapper">
+                  <label for="form-personal-name">Nome</label>
+                  <input type="text" id="form-personal-name" required />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="form-personal-surname">Sobrenome</label>
+                  <input type="text" id="form-personal-surname" required />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="form-personal-email"
+                  >E-mail <span>(digite um email válido)</span></label
+                >
+                <input type="email" id="form-personal-email" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset id="form-mentor-info">
+            <div class="fieldset-wrapper">
+              <legend>Informações do mentor</legend>
+              <div class="input-wrapper">
+                <label for="form-mentor-select-mentor"
+                  >Selecione quem foi o seu mentor</label
+                >
+                <select id="form-mentor-select-mentor">
+                  <option value="diego">Diego Fernandes</option>
+                  <option value="mayk">Mayk</option>
+                  <option value="rodrigo">Rodrigo</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="form-mentor-feedback"
+                  >Feedback sobre o mentor</label
+                >
+                <textarea id="form-mentor-feedback" required></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset id="form-mentor-scheduling">
+            <div class="fieldset-wrapper">
+              <legend>Agendando próxima mentoria</legend>
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="form-scheduling-data">Data</label>
+                  <input type="date" id="form-scheduling-data" required />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="form-scheduling-begin">Das</label>
+                  <input type="time" id="form-scheduling-begin" required />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="form-scheduling-end">Até</label>
+                  <input type="time" id="form-scheduling-end" required />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <input type="submit" value="Salvar" class="btn" />
+        </form>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
